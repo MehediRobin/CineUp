@@ -1,8 +1,3 @@
-# React + Vite
+# CineUp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CinueUp is a website that uses The Movie Database or TMDB and shows information about movies. People can get an overview of movies with different other information like their release dates, IMDb rating, and images. CineUp also categorizes movies in categories like Now Playing, Top Rated, Most Popular, and Upcoming. The search section helps people find information about a specific movie by its name.
