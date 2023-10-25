@@ -51,7 +51,7 @@ export const MovieDetail = () => {
               ""
             )}
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center justify-center lg:justify-start">
             <svg
               className="w-4 h-4 text-yellow-300 mr-1"
               aria-hidden="true"
@@ -87,15 +87,15 @@ export const MovieDetail = () => {
           </p>
           <div>
             {producerList ? (
-              <div className="my-7 flex flex-wrap gap-10 justify-center lg:justify-start mt-20">
+              <div className="w-[100%] my-7 flex flex-row flex-wrap gap-12 justify-center items-center mt-20">
                 {producerList?.map((producer) => (
                   <div
                     key={producer.id}
-                    className="flex flex-col gap-2 justify-center item-center lg:item-start"
+                    className="w-[28%] flex flex-col items-center"
                   >
-                    <div className="h-16 flex justify-center items-center">
+                    <div className="w-[60%] justify-center items-center">
                       <img
-                        className="w-32"
+                        className="w-[100%] mx-h-auto"
                         src={
                           producer.logo_path
                             ? `https://image.tmdb.org/t/p/w500/${producer.logo_path}`
@@ -104,7 +104,7 @@ export const MovieDetail = () => {
                         alt=""
                       />
                     </div>
-                    <div className="mr-2 mt-2">{producer.name}</div>
+                    <div className="mr-2 mt-2 text-center">{producer.name}</div>
                   </div>
                 ))}
               </div>
